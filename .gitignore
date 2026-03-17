@@ -1,0 +1,13 @@
+[obj]
+[bin]
+*.exe
+*.dll
+*.pdb
+*.user
+*.suo
+*.sln.doccontext
+.vs/
+.idea/
+.vscode/
+*.txt
+!README.md

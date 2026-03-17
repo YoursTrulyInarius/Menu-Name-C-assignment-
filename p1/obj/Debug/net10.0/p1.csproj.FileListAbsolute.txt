@@ -12,3 +12,4 @@ C:\Users\ay\Desktop\BSIT 2 C\c#\p1\obj\Debug\net10.0\refint\p1.dll
 C:\Users\ay\Desktop\BSIT 2 C\c#\p1\obj\Debug\net10.0\p1.pdb
 C:\Users\ay\Desktop\BSIT 2 C\c#\p1\obj\Debug\net10.0\p1.genruntimeconfig.cache
 C:\Users\ay\Desktop\BSIT 2 C\c#\p1\obj\Debug\net10.0\ref\p1.dll
+C:\Users\ay\Desktop\BSIT 2 C\c#\p1\obj\Debug\net10.0\p1.sourcelink.json

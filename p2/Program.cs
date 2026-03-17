@@ -1,56 +1,62 @@
-﻿    using System;
-    using System.IO;
+using System;
+using System.IO;
 
-    string filePath = "items.txt";
-    string? choice = "";
-
-    while (choice != "3")
+class Program
+{
+    static void Main()
     {
-        Console.Clear();
-        Console.WriteLine("Menu");
-        Console.WriteLine("[1] Add item");
-        Console.WriteLine("[2] View items");
-        Console.WriteLine("[3] Exit");
-        Console.Write("What do you want to do? ");
-        choice = Console.ReadLine();
+        string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "items.txt");
+        string choice = "";
 
-        if (choice == "1")
+        while (choice != "3")
         {
-            Console.Write("Enter item name: ");
-            string? itemName = Console.ReadLine();
-            if (!string.IsNullOrEmpty(itemName))
+            try { Console.Clear(); } catch (IOException) { }
+            Console.WriteLine("Menu");
+            Console.WriteLine("[1] Add item");
+            Console.WriteLine("[2] View items");
+            Console.WriteLine("[3] Exit");
+            Console.Write("What do you want to do? ");
+            choice = Console.ReadLine() ?? "";
+
+            if (choice == "1")
             {
-                File.AppendAllLines(filePath, new[] { itemName });
-                Console.WriteLine("Item save successfully. . .");
+                Console.Write("Enter item name: ");
+                string itemName = Console.ReadLine() ?? "";
+                if (!string.IsNullOrEmpty(itemName))
+                {
+                    File.AppendAllLines(filePath, new[] { itemName });
+                    Console.WriteLine("Item saved successfully. . .");
+                    Console.WriteLine("\nPress any key to return to menu...");
+                    Console.ReadKey();
+                }
+            }
+            else if (choice == "2")
+            {
+                Console.WriteLine("\nThere are the items :");
+                if (File.Exists(filePath))
+                {
+                    string[] items = File.ReadAllLines(filePath);
+                    foreach (string item in items)
+                    {
+                        Console.WriteLine(item);
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("(No items found)");
+                }
                 Console.WriteLine("\nPress any key to return to menu...");
                 Console.ReadKey();
             }
-        }
-        else if (choice == "2")
-        {
-            Console.WriteLine("\nThere are the items :");
-            if (File.Exists(filePath))
+            else if (choice == "3")
             {
-                string[] items = File.ReadAllLines(filePath);
-                foreach (string item in items)
-                {
-                    Console.WriteLine(item);
-                }
+                Console.WriteLine("Thank you for using");
             }
-            else
+            else if (!string.IsNullOrEmpty(choice))
             {
-                Console.WriteLine("(No items found)");
+                Console.WriteLine("Invalid choice. Press any key to try again.");
+                Console.ReadKey();
             }
-            Console.WriteLine("\nPress any key to return to menu...");
-            Console.ReadKey();
-        }
-        else if (choice == "3")
-        {
-            Console.WriteLine("thank You for using");
-        }
-        else if (!string.IsNullOrEmpty(choice))
-        {
-            Console.WriteLine("Invalid choice. Press any key to try again.");
-            Console.ReadKey();
         }
     }
+}

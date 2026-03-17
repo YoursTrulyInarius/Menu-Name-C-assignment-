@@ -8,13 +8,13 @@ class Program
     {
         List<string> names = new List<string>();
         string input;
-        string filePath = "names.txt";
+        string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "names.txt");
 
         // Step 1: Input Loop
         while (true)
         {
             Console.Write("Enter a name: ");
-            input = Console.ReadLine();
+            input = Console.ReadLine() ?? "";
 
             if (string.IsNullOrWhiteSpace(input)) continue;
             if (input.Trim().ToLower() == "exit") break;
@@ -29,7 +29,7 @@ class Program
         }
         catch (Exception ex)
         {
-            Console.WriteLine($"Error saving names: {ex.Message}");
+            Console.WriteLine("Error saving names: " + ex.Message);
             return;
         }
 
@@ -48,7 +48,7 @@ class Program
         }
         catch (Exception ex)
         {
-            Console.WriteLine($"Error reading names: {ex.Message}");
+            Console.WriteLine("Error reading names: " + ex.Message);
         }
     }
 }
