@@ -1,0 +1,14 @@
+C:\Users\ay\Desktop\BSIT 2 C\c#\p2\bin\Debug\net10.0\p2.exe
+C:\Users\ay\Desktop\BSIT 2 C\c#\p2\bin\Debug\net10.0\p2.deps.json
+C:\Users\ay\Desktop\BSIT 2 C\c#\p2\bin\Debug\net10.0\p2.runtimeconfig.json
+C:\Users\ay\Desktop\BSIT 2 C\c#\p2\bin\Debug\net10.0\p2.dll
+C:\Users\ay\Desktop\BSIT 2 C\c#\p2\bin\Debug\net10.0\p2.pdb
+C:\Users\ay\Desktop\BSIT 2 C\c#\p2\obj\Debug\net10.0\p2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ay\Desktop\BSIT 2 C\c#\p2\obj\Debug\net10.0\p2.AssemblyInfoInputs.cache
+C:\Users\ay\Desktop\BSIT 2 C\c#\p2\obj\Debug\net10.0\p2.AssemblyInfo.cs
+C:\Users\ay\Desktop\BSIT 2 C\c#\p2\obj\Debug\net10.0\p2.csproj.CoreCompileInputs.cache
+C:\Users\ay\Desktop\BSIT 2 C\c#\p2\obj\Debug\net10.0\p2.dll
+C:\Users\ay\Desktop\BSIT 2 C\c#\p2\obj\Debug\net10.0\refint\p2.dll
+C:\Users\ay\Desktop\BSIT 2 C\c#\p2\obj\Debug\net10.0\p2.pdb
+C:\Users\ay\Desktop\BSIT 2 C\c#\p2\obj\Debug\net10.0\p2.genruntimeconfig.cache
+C:\Users\ay\Desktop\BSIT 2 C\c#\p2\obj\Debug\net10.0\ref\p2.dll
