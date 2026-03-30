@@ -1,4 +1,4 @@
-# YoursTrulyInarius - C# Assignments
+no# YoursTrulyInarius - C# Assignments
 
 This repository contains my C# programming assignments, refactored for maximum compatibility and ease of use.
 
@@ -43,3 +43,4 @@ dotnet run --project p2
 
 ---
 *Created as part of BSIT 2 C curriculum.*
+waaaaaaah 
